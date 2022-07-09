@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+.btn {
+      background: #EEECF7;
+      border: 0;
+      color: #5535F0;
+      width: fit-content;
+      font-weight: bold;
+      border-radius: 10px;
+      height: 40px;
+      transition: all 0.2s ease;
+        &:hover {
+        background: #441CFF;
+        }
+        &:focus {
+            background: #441CFF;
+            outline: 0;  
+        }
+}
+
+
+ 
