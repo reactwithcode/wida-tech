@@ -56,7 +56,7 @@ function Chart() {
 		<div className="d-flex justify-content-center mt-5">
 			<div className="flex-col">
 				<h1 className="text-sm-center mb-3">
-					Average Temperature's Time Series Graph In Surabaya
+					Average Temperature Time Series Graph In Surabaya
 				</h1>
 				<ReactFC {...ds.timeseriesDs} />
 			</div>
