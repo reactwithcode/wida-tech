@@ -1,8 +1,12 @@
 # Getting Started with WidaTech - Test Assesment
 
-This project was bootstrapped with ReactJS, Redux, React Bootstrap, and fusioncharts.
+This project was bootstrapped with ReactJS, Redux, React Bootstrap, Formik, Yup, and fusioncharts.
 
 ## Available Scripts
+
+After you fork or clone this repository, you can run:
+
+### `npm run install or yarn`
 
 In the project directory, you can run the project with local JSON database:
 
