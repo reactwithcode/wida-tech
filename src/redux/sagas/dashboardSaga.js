@@ -35,16 +35,3 @@ function* postEvent(action) {
 export function* postEventSaga() {
 	yield takeEvery('ADD_EVENT_REQUESTED', postEvent);
 }
-
-function* fetchWeathers(action) {
-	try {
-		const weathers = yield call(axios, api.weatherBaseUrl);
-		yield put({ type: 'GET_WEATHERS_SUCCESS', weathers: weathers });
-	} catch (e) {
-		yield put({ type: 'GET_WEATHERS_FAILED', message: e.message });
-	}
-}
-
-export function* weathersSaga() {
-	yield takeEvery('GET_WEATHERS_REQUESTED', fetchWeathers);
-}

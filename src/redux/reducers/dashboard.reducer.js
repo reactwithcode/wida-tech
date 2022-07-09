@@ -47,33 +47,3 @@ export function events(state = initialEventsState, action) {
 	}
 }
 
-
-const initialWeathersState = {
-	weathers: [],
-	loading: false,
-	error: null,
-};
-
-export function weathers(state = initialWeathersState, action) {
-	switch (action.type) {
-		case type.GET_WEATHERS_REQUESTED:
-			return {
-				...state,
-				loading: true,
-			};
-		case type.GET_WEATHERS_SUCCESS:
-			return {
-				...state,
-				loading: false,
-				weathers: action.weathers,
-			};
-		case type.GET_WEATHERS_FAILED:
-			return {
-				...state,
-				loading: false,
-				error: action.message,
-			};
-		default:
-			return state;
-	}
-}
